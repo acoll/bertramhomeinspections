@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section.wrapper.style1
+    .container
+      #content
+        article
+          header
+            h2 Price List
+          table
+            thead
+                tr #[th(colspan='2') Single Family Homes]
+            tbody
+                tr #[td Heated Sq Ft 0 - 1,000       ]       #[td $350.]
+                tr #[td Heated Sq Ft 1,001 - 2,000   ]       #[td $375.]
+                tr #[td Heated Sq Ft 2,001 - 2,500   ]       #[td $425.]
+                tr #[td Heated Sq Ft 2,501 - 3,000   ]       #[td $450. ]
+                tr #[td Heated Sq Ft 3,001 - 3,500   ]       #[td $500.]
+                tr #[td Heated Sq Ft 3,501 - 4,000   ]       #[td $525.]
+                tr #[td Heated Sq Ft 4,001 - 4,500   ]       #[td $550.]
+                tr #[td Heated Sq Ft 4,501 - 5,000   ]       #[td $575.]
+                tr #[td Heated Sq Ft over 5000       ]       #[td +$25. per 500 Sq Ft]
+                tr #[td Buildings over 50 years old  ]       #[td +$50. ]
+                tr #[td Out Building under 100 sq ft ]       #[td $75.]
+                tr #[td Out building 101 - 400 sq ft ]       #[td $125.]
+                tr #[td Out building (1 car garage)  ]       #[td $125.]
+                tr #[td Out Building (2 car garage)  ]       #[td $150.]
+                tr #[td Out Building (3 car garage)  ]       #[td $175.]
+                tr #[td Mobile Single wide 1980 or newer]    #[td $300.]
+                tr #[td Mobile Double wide 1980 or newer]    #[td $350.]
+        table
+            thead
+                tr
+                th(colspan=2) Other Services
+            tbody
+                tr #[td Radon Air Test]              #[td $175.]
+                tr #[td Radon in Water Test]         #[td     $30.]
+                tr.no-border 
+                    td Standard Water Test]         
+                    td $155.
+                tr 
+                    td(colspan=2) Total Coliform & E. coli Bacteria, Nitrate, Iron, Chloride, Manganese, Hardness, pH, Sodium
+                tr.no-border
+                    td Comprehensive Water Test 
+                    td $200.
+                tr
+                    td(colspan=2) Total Coliform & E. coli Bacteria, Nitrate, Nitrite, Iron, Chloride, Manganese, Hardness, pH, Sodium, Arsenic, Fluoride, Copper, Lead, Conductivity, Alkalinity
+                tr.no-border
+                    td FHA / VA Minimum Water Test  
+                    td $110. 
+                tr
+                    td(colspan=2) Total Coliform & E. coli Bacteria, Nitrate, Nitrite, Lead
+                tr.no-border
+                    td FHA / VA Plus Water Test  
+                    td $175. 
+                tr
+                    td(colspan=2) Total Coliform & E. coli Bacteria, Nitrate, Nitrite, Lead, Iron, Manganese, Sodium, Chloride, pH, Hardness

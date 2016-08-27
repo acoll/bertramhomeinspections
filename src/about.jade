@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  section.wrapper.style1
+    .container
+      #content
+        article
+          header
+            h2 About
+            p Kenyon Bertram
+          span.image.featured
+            img#ken(src='images/ken-1.jpg', alt='')
+            script.
+              (function () {
+                function setKenImage() {
+                  var ken = (location.hash || '#ken-1').slice(1);
+                  var url = '/images/' + ken + '.jpg';
+                  document.querySelector('img#ken').src = url;
+                }
+                setKenImage();
+
+                window.addEventListener('hashchange', setKenImage);
+              })()
+          p
+            | Kenyon is a licensed home inspector in the state of New Hampshire, license #411. He is owner and inspector at Bertram Home Inspections llc. Has experence in home repairs, whole home renovations, home building and investing. Between his personal experience and training he has a good eye for spotting issues or items that may need maintenance in the future. He hopes to pass this experience on to you by providing a thorough, above average inspection.
+      
