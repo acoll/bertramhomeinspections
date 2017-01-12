@@ -25,7 +25,6 @@
             <li class="current"><a href="/">Home</a></li>
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/about.html">About</a></li>
-            <li><a href="two-sidebar.html">Services</a></li>
           </ul>
         </nav>
         <script>
@@ -45,19 +44,7 @@
           })();
         </script>
       </div>
-      <section id="banner" style="background-image: url(/images/house-1.jpg)">
-        <script>
-          (function () {
-            function setHouseImage() {
-              var house = (location.hash || '#house-1').slice(1);
-              var url = 'url(/images/' + house + '.jpg)';
-              document.querySelector('section#banner').style.backgroundImage = url;
-            }
-            setHouseImage();
-          
-            window.addEventListener('hashchange', setHouseImage);
-          })()
-        </script>
+      <section id="banner" style="background-image: url(/images/house-3.jpg)">
       </section>
       <!-- Highlights-->
       <section class="wrapper style1">
@@ -201,16 +188,13 @@
         </div>
         <!-- Icons-->
         <ul class="icons">
-          <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-          <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/bertramhomeinspections/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="https://github.com/acoll/bertramhomeinspections" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
         </ul>
         <!-- Copyright-->
         <div class="copyright">
           <ul class="menu">
-            <li>© Untitled. All rights reserved</li>
+            <li>© Bertram Home Inspections LLC</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>
@@ -224,4 +208,5 @@
     <!--if lte IE 8script(src='assets/js/ie/respond.min.js')
     -->
     <script src="assets/js/main.js"></script>
+  <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script></body>
 </html>
