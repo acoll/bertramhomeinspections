@@ -1,3 +1,5 @@
+
+
 /*
 	Arcana by HTML5 UP
 	html5up.net | @ajlkn
@@ -5,6 +7,37 @@
 */
 
 (function($) {
+
+	// form submit
+	$('#contactForm').on('submit', function (e) {
+		e.preventDefault();
+		var formData = $('#contactForm').serializeArray()
+		.reduce(function (prev, curr) {
+			prev[curr.name] = curr.value;
+			return prev;
+		}, {});
+		//- console.log('Data:', data);
+		var data = {
+			subject: 'Contact Me - bertramhomeinspections.com',
+			queue: 'bertram',
+			data: formData
+		};
+
+		$.ajax({
+		type: "POST",
+		url: 'https://55kuk29vd4.execute-api.us-east-1.amazonaws.com/Prod/',
+		data: JSON.stringify(data),
+		success: function () { 
+			$('#contactForm').hide();
+			$('#contactThanks').show();
+		},
+		dataType: 'json'
+		});
+	});
+
+	// $('nav > ul > li').removeClass('current');
+	// var selector = 'nav > ul > li > a[href="' + window.location.pathname + '"]';
+	// $(selector).parent().addClass('current');
 
 	skel.breakpoints({
 		wide: '(max-width: 1680px)',
