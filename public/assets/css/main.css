@@ -2337,7 +2337,7 @@ table tbody tr.no-border {
 		}
 
 		.box.post .inner {
-			margin-left: calc(30% + 2em);
+			margin-left: calc(2em);
 		}
 
 			.box.post .inner > :last-child {
